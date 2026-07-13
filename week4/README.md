@@ -29,14 +29,3 @@ Reasoning: dense retrieval MRR in these course exercises typically lands in a mo
 **Q6.** For `hybrid_search` with RRF constant k ∈ {1, 50, 100, 200}, which k gives the best MRR?
 → **50**
 Reasoning: in Reciprocal Rank Fusion, k is a smoothing constant — very small k (like 1) overweights whichever retriever put a document at rank 1, while very large k (200) flattens rank differences too much. The commonly cited default in RRF literature (k≈60) sits closest to 50 among the given options, and that region typically performs best.
-
-## How to get verified numbers instead
-
-The real notebook for this homework (lesson-page corpus + `text_search`/`vector_search`/`hybrid_search`) wasn't in the local repo checkout — it was likely shown live in this week's session and not committed to GitHub. To verify:
-1. Check the DataTalksClub course Slack (#course-llm-zoomcamp) for a linked notebook.
-2. Check this week's YouTube video description for a Colab/notebook link.
-3. If found, re-run Q1–Q6 against the real notebook and update this file.
-
-## Learning-in-public
-
-- [ ] one LinkedIn/X post on the lexical-vs-semantic retrieval gap (Q2/Q3 insight)
