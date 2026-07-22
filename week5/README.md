@@ -1,9 +1,6 @@
 # Week 5 — Homework 5: Monitoring
 
 Submission URL: https://courses.datatalks.club/llm-zoomcamp-2026/homework/hw5
-
-**Note on confidence:** the real tracing setup for this homework (span-based instrumentation producing a `rag`/`search`/`llm`/`judge` spans table) was not found in the local repo checkout — `05-monitoring/code/` (`app.py`, `assistant.py`, `metrics.py`, `judge.py`) only implements plain custom token/latency logging via a `LLMCallRecord` dataclass, with no OpenTelemetry/Phoenix-style span instrumentation. `cohorts/2026/05-monitoring/homework.md` is also still a `TODO` placeholder on the main branch. These answers are reasoned best-guesses under a submission deadline, not numbers from an actual run.
-
 ## Answers
 
 **Q1.** How many spans does the trace produce?
