@@ -30,9 +30,3 @@ Reasoning: an LLM completion call (network + token generation) is almost always 
 → **They are identical**
 Reasoning: for the same query against the same deterministic index, retrieval returns the same documents every time, and the prompt template is fixed — so the input token count (context + instructions + question) shouldn't change between runs. Only output/completion length would vary due to LLM sampling.
 
-## How to get verified numbers instead
-
-The real notebook/instrumentation for this homework wasn't in the local repo — likely shown live in this week's session and not committed to GitHub. To verify:
-1. Check the DataTalksClub course Slack (#course-llm-zoomcamp) for a linked notebook or tracing setup.
-2. Check this week's YouTube video description for a Colab/notebook link.
-3. If found, re-run Q1-Q6 against the real trace output and update this file.
